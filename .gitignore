@@ -9,6 +9,7 @@
 *npy
 *.csv
 *.pkl
+*.txt
 
 # Directories #
 ###############
