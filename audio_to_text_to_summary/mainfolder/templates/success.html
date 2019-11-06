@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>NIIT-Minutes Of Meeting</title>
+        <!-- Plugins CSS -->
+        <link href="../static/css/plugins/plugins.css" rel="stylesheet">
+        <link href="linearicons/fonts.css" rel="stylesheet">
+        <link href="../static/css/style.css" rel="stylesheet">
+    </head>
+
+    <body data-spy="scroll" data-target="#landingkit-navbar" data-offset="71">
+        <div id="preloader">
+            <div id="preloader-inner"></div>
+        </div><!--/preloader-->
+
+        <div id="home" class=" parallax-hero" data-jarallax='{"speed": 0.2}' style='background-image: url("images/bg1.jpg")'>
+            <div class="parallax-overlay"></div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 pb50">
+                        <h5 class="text-white font400 text-uppercase"></h5>
+                        <h3 class="mb20 text-white title-font text-capitalize h1">Minutes Of Meeting</h3>
+                        <h3 class="text-white-gray mb30 lead">
+                            Get Summary Of Your Meeting In Minute's
+                        </h3>
+
+                         <form action = "/upload_audio" method = "post" enctype="multipart/form-data">
+                             <div class='wrapper'>
+                                 <input type="file" name="file" class="btn btn-outline-secondary" />
+                                 <br><br>
+                                 <input type="submit" value="Get Summary" class="btn btn-success" accept="audio/mp3,audio/*;capture=microphone" >
+                             </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 mr-auto">
+                        <img src="../static/images/sample.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div><!--hero-->
+
+
+            <form>
+                <div class="container">
+                    <br><br>
+                        <H3>Minutes of Meeting</H3>
+                        <hr>
+                    <br><br>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <p><strong>Meeting Number : </strong> NIIT001</p>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <p><strong>Date and Venue : </strong> <script> document.write(new Date().toLocaleDateString()); </script> , NIIT Greater Noida</p>
+                    </div>
+                      <div class="form-group col-md-6">
+                          <p><strong>Start Time :  </strong>{{starttime}}</p>
+                    </div>
+                      <div class="form-group col-md-6">
+                          <p><strong>End Time :  </strong><script> document.write(new Date()); </script></p>
+                    </div>
+                      <div class="form-group col-md-6">
+                          <p><strong>Discussion Refrence :</strong> Not applicable </p>
+                    </div>
+                      <div class="form-group col-md-6">
+                          <p><strong>Discussion Material Attached : </strong> YES</p>
+                    </div>
+                  </div>
+                    <hr>
+                  <div class="form-group">
+                    <h5>Agenda</h5>
+                      <p>Generate a summary of the meeting held on : <script> document.write(new Date().toLocaleDateString()); </script>  </p>
+                  </div>
+                    <hr>
+
+                  <div class="form-group">
+                    <h5>Summary</h5>
+                      <p>{{summary}}</p>
+                  </div>
+                    <hr>
+
+                    <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <p> <strong>Target Date of next Meeting : </strong>This is a recurring weekly meeting.</p>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <p><strong>Prepared By :</strong> Generated Automatically. </p>
+                    </div>
+                      <div class="form-group col-md-6">
+                          <p><strong>Date : </strong>  <script> document.write(new Date().toLocaleDateString()); </script></p>
+                    </div>
+                      <div class="form-group col-md-6">
+                          <p><strong>Client Signature :</strong>  Not Required</p>
+                    </div>
+
+                  </div>
+                </div>
+
+            </form>
+
+
+        <!--back to top-->
+        <a href="#" class="back-to-top" id="back-to-top"><i class="icon-chevron-up"></i></a>
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script type="text/javascript" src="../static/js/plugins/plugins.js"></script>
+        <!--tweet-scroller-->
+        <script src="tweetie/tweetie.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="../static/js/landing.custom.js"></script>
+    </body>
+</html>
