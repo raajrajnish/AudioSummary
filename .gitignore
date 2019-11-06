@@ -1,0 +1,27 @@
+# File types #
+##############
+*.pyc
+*.swo
+*.swp
+*.swn
+*.mp3
+*.npz
+*.txt
+*npy
+*.csv
+*.pkl
+
+# Directories #
+###############
+logs/
+
+# Specific files #
+##################
+config.py
+
+# OS generated files #
+######################
+.DS_Store
+ehthumbs.db
+Icon
+Thumbs.db

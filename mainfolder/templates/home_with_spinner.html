@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>NIIT-Minutes Of Meeting</title>
+        <!-- Plugins CSS -->
+        <link href="../static/css/plugins/plugins.css" rel="stylesheet">
+        <link href="linearicons/fonts.css" rel="stylesheet">
+        <link href="../static/css/style.css" rel="stylesheet">
+        <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+
+
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    </head>
+
+    <body data-spy="scroll" data-target="#landingkit-navbar" data-offset="71">
+        <div id="preloader">
+            <div id="preloader-inner"></div>
+        </div><!--/preloader-->
+
+        <div id="home" class=" parallax-hero" data-jarallax='{"speed": 0.2}' style='background-image: url("images/bg1.jpg")'>
+            <div class="parallax-overlay"></div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 pb50">
+                        <h5 class="text-white font400 text-uppercase"></h5>
+                        <h3 class="mb20 text-white title-font text-capitalize h1">Minutes Of Meeting</h3>
+                        <h3 class="text-white-gray mb30 lead">
+                            Get Summary Of Your Hour Long Meeting In Minute's
+                        </h3>
+
+                         <form action = "/start_analysis" method = "post" enctype="multipart/form-data">
+                             <div class='wrapper'>
+                                 <input type="file" name="file" class="btn btn-outline-secondary" />
+                                 <br><br>
+                                 <input type="submit" value="Get Summary" class="btn btn-success" accept="audio/mp3,audio/*;capture=microphone">
+                             </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 mr-auto">
+                        <img src="../static/images/sample.png" alt="" class="img-fluid">
+                    </div>
+
+                </div>
+            </div>
+        </div><!--hero-->
+        <br><br>
+
+
+        <div id="123" class="d-flex justify-content-center">
+                    <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+        </div>
+
+
+
+
+        <!--back to top-->
+        <a href="#" class="back-to-top" id="back-to-top"><i class="icon-chevron-up"></i></a>
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script type="text/javascript" src="../static/js/plugins/plugins.js"></script>
+        <!--tweet-scroller-->
+        <script src="tweetie/tweetie.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="../static/js/landing.custom.js"></script>
+    </body>
+
+</html>
