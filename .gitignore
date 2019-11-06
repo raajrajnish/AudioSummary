@@ -6,7 +6,7 @@
 *.swn
 *.mp3
 *.npz
-*npy
+*.npy
 *.csv
 *.pkl
 *.txt
