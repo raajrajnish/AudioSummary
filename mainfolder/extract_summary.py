@@ -1,5 +1,5 @@
 import pandas as pd
-from email_summarization import summarize
+from text_summarization import summarize
 
 
 def summary(path):
