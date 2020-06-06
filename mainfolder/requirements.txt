@@ -13,7 +13,7 @@ cloudpickle==1.2.2
 cryptography==2.8
 cssselect==1.1.0
 decorator==4.4.1
-Django==2.2.5
+Django==2.2.13
 Flask==1.1.1
 flask-swagger-ui==3.6.0
 html5lib==1.0.1
